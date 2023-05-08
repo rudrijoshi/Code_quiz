@@ -1,0 +1,23 @@
+.container {
+    text-align: center;
+}
+.first-container {
+    font-weight: bold;
+    font-size:large;
+}
+.highscore {
+    font-size: x-small;
+    text-align: justify;
+    justify-content: flex-start;
+    position: relative;
+    top: -8px;
+    font-weight: lighter;
+
+}
+.timer {
+    font-size: xx-small;
+    text-align: right;
+    position:relative;
+    top: -38px;
+    font-weight: lighter;
+}

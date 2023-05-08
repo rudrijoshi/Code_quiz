@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz Challenge</title>
+    <link rel="stylesheet" type="text/css" href="./Assets/style.css"> 
+</head>
+<body>
+    <header>
+        <h4 class="highscore">View Highscores</h4>
+        <h4 class="timer">Time:<span class = "view-time"></span></h4>
+    </header>
+    <main>
+        <div class="container">
+            <div class = "first-container">Coding Quiz Challenge</div>
+            <p>Try to answer the following code-related questions within the time limit. Correct answers are worth 7 points!
+                Keep in mind that incorrect answers will penalize your score by 2 points and your time by 3 seconds!</p>
+                <button>Start Quiz</button>
+        </div>
+        <div id ="container-question" class="hide">
+            <div class="question-container"></div>
+            <div class="end-container"></div>
+        </div>
+        <div id="last-container" class="hide">
+            <div class="question1"></div>
+            <div>All done!</div>
+            <div>Your final score is:</div>
+            <form class="initials">
+                <p>Enter Initials:
+                    <input type="text" name="initials" class="input-text" id="initial"/>
+                </p>
+                <button class="initial-button">Submit</button>
+            </form>
+        </div>
+        
+        <div id="third-container" class="hide">
+            <div class="view-highscore">Highscores</div>
+            <ol class="result"></ol>
+            <div>
+                <button class="go-back">Go back</button>
+                <button class="clear">Clear highscore</button>
+            </div>
+        </div>
+       <div class="hide" id="correct">
+        <p>Correct!</p>
+       </div>
+       <div class="hide" id="wrong">
+        <p>Wrong!</p>
+       </div>
+
+    </main>
+    
+    <script src ="./Assets/script.jss"></script>
+</body>
+</html>
