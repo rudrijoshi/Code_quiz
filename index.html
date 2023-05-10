@@ -9,25 +9,28 @@
 </head>
 <body>
     <header>
-        <h4 class="highscore">View Highscores</h4>
+        <h4 id="highscore">View Highscores</h4>
         <h4 class="timer">Time:<span class = "view-time"></span></h4>
     </header>
     <main>
-        <div class="container">
+        <div id="container" class="show">
             <div class = "first-container">Coding Quiz Challenge</div>
             <p>Try to answer the following code-related questions within the time limit. Correct answers are worth 7 points!
-                Keep in mind that incorrect answers will penalize your score by 2 points and your time by 3 seconds!</p>
-                <button>Start Quiz</button>
+                Keep in mind that incorrect answers will penalize your score by 1 points and your time by 3 seconds!</p>
+                <button class ="btn startend" id="start-game">Start Quiz</button>
         </div>
-        <div id ="container-question" class="hide">
-            <div class="question-container"></div>
-            <div class="end-container"></div>
+        <div id ="question-container" class="hide">
+            <div class="container-question">
+                <div id="question"></div>
+                <div id="answer-button" class="btn-grid"></div>
+            </div>
         </div>
         <div id="last-container" class="hide">
-            <div class="question1"></div>
-            <div>All done!</div>
-            <div>Your final score is:</div>
-            <form class="initials">
+            <div class="question1", id="banner">  
+                <div>All done!</div>
+                <div>Your final score is:</div>
+            </div>
+            <form id= initial-form class="initials">
                 <p>Enter Initials:
                     <input type="text" name="initials" class="input-text" id="initial"/>
                 </p>
@@ -37,10 +40,10 @@
         
         <div id="third-container" class="hide">
             <div class="view-highscore">Highscores</div>
-            <ol class="result"></ol>
+            <ol id="result"></ol>
             <div>
-                <button class="go-back">Go back</button>
-                <button class="clear">Clear highscore</button>
+                <button class="btn" id="go-back">Go back</button>
+                <button class="btn" id="clear">Clear highscore</button>
             </div>
         </div>
        <div class="hide" id="correct">
@@ -52,6 +55,6 @@
 
     </main>
     
-    <script src ="./Assets/script.jss"></script>
+    <script src ="./Assets/script.js"></script>
 </body>
 </html>
